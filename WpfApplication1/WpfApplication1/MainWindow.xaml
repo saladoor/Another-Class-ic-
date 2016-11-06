@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>   
+        Title="UML - Klassediagram" Height="350" Width="525">
+
+
+    <DockPanel x:Name="LayoutRoot" LastChildFill="true">
+        <Grid DockPanel.Dock="Top">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*" />
+                <ColumnDefinition Width="25*" />
+                <ColumnDefinition Width="25*" />
+                <ColumnDefinition Width="25*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Height="30" Content="Menu" />
+            <Button Grid.Column="1" Height="30" Content="Zoom" />
+            <Button Grid.Column="2" Height="30" Content="Undo"/>
+            <Button Grid.Column="3" Height="30" Content="Redo" />
+
+        </Grid>
+
+        <Grid DockPanel.Dock="Left">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*" />
+                <RowDefinition Height="25*" />
+                <RowDefinition Height="25*" />
+                <RowDefinition Height="25*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Content="" />
+            <Button Grid.Row="1" Content="" />
+            <Button Grid.Row="2" Content=""/>
+            <Button Grid.Row="3" Content="" />
+
+        </Grid>
+
+        <Label  DockPanel.Dock="Bottom" Content="Statusbar"/>
+
+        <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
+            <Canvas />
+        </ScrollViewer>
+
+    </DockPanel>
 </Window>
