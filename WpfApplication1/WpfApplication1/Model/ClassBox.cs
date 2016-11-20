@@ -10,10 +10,21 @@ namespace WpfApplication1.Model
 
     public class ClassBox
     {
-        private String className;
+        private string className;
         private int xPos, yPos;
-        private String[] feilds;
-        private String[] methods;
+        private string fields, methods;
+
+        public ClassBox(string className, int xPos, int yPos, string fields, string methods)
+        {
+            this.className = className;
+            this.xPos = xPos;
+            this.yPos = yPos;
+            this.fields = fields;
+            this.methods = methods;
+        }
+        
+        // Commit test
+
 
 
     }
