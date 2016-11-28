@@ -10,9 +10,11 @@ namespace WpfApplication1.Model
 
     public class ClassBox
     {
-        private string className;
-        private int xPos, yPos;
-        private string fields, methods;
+        public string className { get; set; }
+        public int xPos { get; set; }
+        public int yPos { get; set; }
+        public string fields { get; set; }
+        public string methods { get; set; }
 
         public ClassBox(string className, int xPos, int yPos, string fields, string methods)
         {
@@ -23,7 +25,7 @@ namespace WpfApplication1.Model
             this.methods = methods;
         }
         
-        // Commit test
+     
 
 
 
