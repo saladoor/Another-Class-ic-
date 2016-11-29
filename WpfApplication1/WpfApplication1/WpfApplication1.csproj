@@ -68,6 +68,9 @@
     <Compile Include="ResizeThumb.cs" />
     <Compile Include="RotateThumb.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\ToolbarView.xaml.cs">
+      <DependentUpon>ToolbarView.xaml</DependentUpon>
+    </Compile>
     <Page Include="Resources\DesignerItem.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -132,11 +135,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UserControls\" />
+    <Folder Include="View\Images\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\arrow.png" />
-    <Resource Include="Images\line.png" />
-    <Resource Include="Images\square.png" />
+    <Resource Include="View\Arrow.png" />
+    <Resource Include="View\Line.png" />
+    <Resource Include="View\Rectangle.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

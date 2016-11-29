@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfApplication1.View
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for ToolbarView.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class ToolbarView : Page
     {
-        public Page1()
+        public ToolbarView()
         {
             InitializeComponent();
         }
