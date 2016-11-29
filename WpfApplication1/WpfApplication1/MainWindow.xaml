@@ -25,10 +25,10 @@
                 <ColumnDefinition Width="25*" />
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" Height="30" Content="Menu" Click="Button_Click" />
-            <Button Grid.Column="1" Height="30" Content="Zoom" />
-            <Button Grid.Column="2" Height="30" Name ="undo" Content="Undo"/>
-            <Button Grid.Column="3" Height="30" Content="Redo" />
+            <Button Grid.Column="0" Height="30" Content="Menu" Click="Menu_Click" />
+            <Button Grid.Column="1" Height="30" Content="Zoom" Click="Zoom_Click"/>
+            <Button Grid.Column="2" Height="30" Name ="Undo" Content="Undo" Click="Undo_Click"/>
+            <Button Grid.Column="3" Height="30" Content="Redo_Click" Click="Redo_Click"/>
 
         </Grid>
 
@@ -44,23 +44,17 @@
                 <ColumnDefinition Width="100" />
             </Grid.ColumnDefinitions>
 
-            
-            <Button Grid.Row="0">
-                <StackPanel>
-                    <Image Source="Images/square.png" />
-                </StackPanel>
+
+            <Button Grid.Row="0" Click="Square_Click">
+                <Image Source="Images/square.png" />
             </Button>
 
-            <Button Grid.Row="1">
-                <StackPanel>
-                    <Image Source="Images/arrow.png" />
-                </StackPanel>
+            <Button Grid.Row="1" Click="Arrow_Click">
+                <Image Source="Images/arrow.png" />
             </Button>
-            
-            <Button Grid.Row="2">
-                <StackPanel>
-                    <Image Source="Images/line.png" />
-                </StackPanel>
+
+            <Button Grid.Row="2" Click="Line_Click">
+                <Image Source="Images/line.png" />
             </Button>
 
         </Grid>
