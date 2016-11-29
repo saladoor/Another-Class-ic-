@@ -58,13 +58,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Command\AddLineCommand.cs" />
+    <Compile Include="Command\AddShapeCommand.cs" />
+    <Compile Include="Command\MoveShapeCommand.cs" />
     <Compile Include="Model\DrawItem.cs" />
+    <Compile Include="Model\Line.cs" />
+    <Compile Include="Model\NotifyBase.cs" />
+    <Compile Include="Model\Shape.cs" />
     <Compile Include="ResizeThumb.cs" />
     <Compile Include="RotateThumb.cs" />
-    <Compile Include="ViewModels\MainViewModels.cs" />
-    <Compile Include="View\ToolbarView.xaml.cs">
-      <DependentUpon>ToolbarView.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="ViewModel\MainViewModel.cs" />
     <Page Include="Resources\DesignerItem.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
