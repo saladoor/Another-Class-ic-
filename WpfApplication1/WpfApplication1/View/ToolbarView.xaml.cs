@@ -12,27 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfApplication1.Model;
 
-namespace WpfApplication1
+namespace WpfApplication1.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page1 : Page
     {
-
-        public MainWindow()
+        public Page1()
         {
             InitializeComponent();
-
-        }
-
-
-        private void Menu_Click(object sender, RoutedEventArgs e)
-        {
-
-            throw new NotImplementedException();
         }
     }
 }

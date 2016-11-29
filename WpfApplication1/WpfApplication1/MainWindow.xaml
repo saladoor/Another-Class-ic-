@@ -78,8 +78,8 @@
                 </ContentControl>
                 <ContentControl Width="130"
                     Height="130"
-                    Canvas.Top="150"
-                    Canvas.Left="150"
+                    Canvas.Top="59"
+                    Canvas.Left="122"
                     Selector.IsSelected="True"
                     Style="{StaticResource DesignerItemStyle}">
                     <Path Fill="Red"
