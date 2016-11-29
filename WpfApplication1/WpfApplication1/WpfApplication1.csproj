@@ -60,6 +60,7 @@
     </ApplicationDefinition>
     <Compile Include="Command\AddLineCommand.cs" />
     <Compile Include="Command\AddShapeCommand.cs" />
+    <Compile Include="Command\MoveShapeCommand.cs" />
     <Compile Include="Model\DrawItem.cs" />
     <Compile Include="Model\Line.cs" />
     <Compile Include="Model\NotifyBase.cs" />
