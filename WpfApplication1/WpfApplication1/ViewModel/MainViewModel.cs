@@ -49,7 +49,7 @@ namespace WpfApplication1.ViewModel
         public ObservableCollection<Line> Lines { get; set; }
 
         // Commands that the UI can be bound to.
-        public ICommand AddShapeCommand { get; }
+        public ICommand AddShapeCommand { get;  }
         public ICommand RemoveShapeCommand { get; }
         public ICommand AddLineCommand { get; }
         public ICommand RemoveLinesCommand { get; }
