@@ -4,18 +4,35 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApplication1"
+        xmlns:ViewModel="clr-namespace:WpfApplication1.ViewModel"
+        xmlns:View="clr-namespace:WpfApplication1.View"
         mc:Ignorable="d"
-        Title="UML - Klassediagram" Height="350" Width="525">
-    <Window.Resources>
+        Title="UML - Klassediagram" Height="500" Width="700">
+ <!--   <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/DesignerItem.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-    </Window.Resources>
+    </Window.Resources> -->
 
-    <DockPanel x:Name="LayoutRoot" LastChildFill="true">
+    <Window.DataContext>
+        <ViewModel:MainViewModel />
+    </Window.DataContext>
+
+    <StackPanel>
+        
+        <View:ToolbarView />
+        
+        <Grid>
+            <ItemsControl ItemsSource="{Binding Lines}"/>
+            <ItemsControl ItemsSource="{Binding Shapes}"/>
+        </Grid>
+        
+    </StackPanel>
+    
+    
+    <!--   <DockPanel x:Name="LayoutRoot" LastChildFill="true">
         <Grid DockPanel.Dock="Top">
 
             <Grid.ColumnDefinitions>
@@ -90,6 +107,6 @@
             </Canvas>
         </ScrollViewer>
 
-    </DockPanel>
+    </DockPanel> -->
 
 </Window>

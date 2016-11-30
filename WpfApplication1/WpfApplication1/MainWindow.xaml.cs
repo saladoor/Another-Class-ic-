@@ -29,10 +29,6 @@ namespace WpfApplication1
         }
 
 
-        private void Menu_Click(object sender, RoutedEventArgs e)
-        {
 
-            throw new NotImplementedException();
-        }
     }
 }
