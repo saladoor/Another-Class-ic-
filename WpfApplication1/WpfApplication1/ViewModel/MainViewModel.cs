@@ -87,9 +87,9 @@ namespace WpfApplication1.ViewModel
 
             // The commands are given the methods they should use to execute, and find out if they can execute.
             AddShapeCommand = new RelayCommand(AddShape);
-            RemoveShapeCommand = new RelayCommand<IList>(RemoveShape, CanRemoveShape);
+  //          RemoveShapeCommand = new RelayCommand<IList>(RemoveShape, CanRemoveShape);
             AddLineCommand = new RelayCommand(AddLine);
-            RemoveLinesCommand = new RelayCommand<IList>(RemoveLines, CanRemoveLines);
+  //          RemoveLinesCommand = new RelayCommand<IList>(RemoveLines, CanRemoveLines);
 
             // The commands are given the methods they should use to execute, and find out if they can execute.
             MouseDownShapeCommand = new RelayCommand<MouseButtonEventArgs>(MouseDownShape);

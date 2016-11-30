@@ -4,10 +4,26 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApplication1"
-        mc:Ignorable="d"
-        Title="UML - Klassediagram" Height="350" Width="525">
-    <Window.Resources>
+        xmlns:ViewModel="clr-namespace:WpfApplication1.ViewModel"
+        xmlns:View="clr-namespace:WpfApplication1.View"
+        Title="UML - Klassediagram" Height="500" Width="700">
+
+    <Window.DataContext>
+        <ViewModel:MainViewModel />
+    </Window.DataContext>
+
+    <StackPanel>
+
+        <View:ToolbarView />
+
+        <Grid>
+            <ItemsControl ItemsSource="{Binding Lines}"/>
+            <ItemsControl ItemsSource="{Binding Shapes}"/>
+        </Grid>
+
+    </StackPanel>
+    
+    <!--    <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/DesignerItem.xaml"/>
@@ -90,6 +106,6 @@
             </Canvas>
         </ScrollViewer>
 
-    </DockPanel>
+    </DockPanel> -->
 
 </Window>
