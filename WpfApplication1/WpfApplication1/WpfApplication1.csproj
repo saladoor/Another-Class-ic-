@@ -83,7 +83,7 @@
     <Compile Include="Model\Shape.cs" />
     <Compile Include="ResizeThumb.cs" />
     <Compile Include="RotateThumb.cs" />
-    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="MainViewModel.cs" />
     <Compile Include="View\Application.xaml.cs">
       <DependentUpon>Application.xaml</DependentUpon>
     </Compile>
@@ -93,8 +93,8 @@
     <Compile Include="View\LineUserControl.xaml.cs">
       <DependentUpon>LineUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ShapeUserControl.xaml.cs">
-      <DependentUpon>ShapeUserControl.xaml</DependentUpon>
+    <Compile Include="View\RectangleUserControl.xaml.cs">
+      <DependentUpon>RectangleUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ToolbarView.xaml.cs">
       <DependentUpon>ToolbarView.xaml</DependentUpon>
@@ -135,7 +135,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ShapeUserControl.xaml">
+    <Page Include="View\RectangleUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -172,7 +172,7 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ViewModel\App.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UserControls\" />

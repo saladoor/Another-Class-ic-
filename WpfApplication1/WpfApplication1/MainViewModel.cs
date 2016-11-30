@@ -73,7 +73,7 @@ namespace WpfApplication1.ViewModel
             // Also a constructor could be created for the Shape class that takes the parameters (X, Y, Width and Height), 
             //  and the following could be done:
             // new Shape(30, 40, 80, 80);
-            Shapes = new ObservableCollection<Shape>()
+            Rectangle = new ObservableCollection<Shape>()
             {
                 new Shape() { X = 30, Y = 40, Width = 80, Height = 80 }, 
                 new Shape() { X = 140, Y = 230, Width = 100, Height = 100 } 
@@ -100,7 +100,7 @@ namespace WpfApplication1.ViewModel
         // Adds a Shape with an AddShapeCommand.
         private void AddShape()
         {
-            new AddShapeCommand(Shapes, new Shape());
+            new AddShapeCommand(Rectangle, new Shape());
         }
 
         // Checks if the chosen Shapes can be removed, which they can if exactly 1 is chosen.
