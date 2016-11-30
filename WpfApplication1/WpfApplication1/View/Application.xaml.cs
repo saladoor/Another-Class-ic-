@@ -18,11 +18,7 @@ namespace WpfApplication1.View
     /// <summary>
     /// Interaction logic for Application.xaml
     /// </summary>
-    public partial class Application : Page
+    public partial class Application : Application
     {
-        public Application()
-        {
-            InitializeComponent();
-        }
     }
 }

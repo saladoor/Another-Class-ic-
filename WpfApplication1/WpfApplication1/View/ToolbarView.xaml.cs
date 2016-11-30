@@ -18,11 +18,7 @@ namespace WpfApplication1.View
     /// <summary>
     /// Interaction logic for ToolbarView.xaml
     /// </summary>
-    public partial class ToolbarView : Page
+    public partial class ToolbarView : UserControl
     {
-        public ToolbarView()
-        {
-            InitializeComponent();
-        }
     }
 }

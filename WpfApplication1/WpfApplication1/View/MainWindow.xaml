@@ -31,20 +31,6 @@
         </ResourceDictionary>
     </Window.Resources> -->
 
-    <Window.DataContext>
-        <ViewModel:MainViewModel />
-    </Window.DataContext>
-
-    <StackPanel>
-        
-        <View:ToolbarView />
-        
-        <Grid>
-            <ItemsControl ItemsSource="{Binding Lines}"/>
-            <ItemsControl ItemsSource="{Binding Shapes}"/>
-        </Grid>
-        
-    </StackPanel>
     
     
     <!--   <DockPanel x:Name="LayoutRoot" LastChildFill="true">
