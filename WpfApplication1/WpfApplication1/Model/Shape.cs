@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
+using WpfApplication1.Model;
 
-namespace WpfApplication1.Model
+namespace _WpfApplication1.Model
 {
     // The Shape class descripes a shape with a position (X and Y), and a size (Width and Height).
     public class Shape : NotifyBase
@@ -147,7 +148,7 @@ namespace WpfApplication1.Model
         // A lambda expression can be given, because the 'NotifyPropertyChanged' method can get the property name from it.
         public bool IsSelected { get { return isSelected; } set { isSelected = value; NotifyPropertyChanged(); NotifyPropertyChanged(() => SelectedColor); } }
         // This method uses an expression-bodied member (http://www.informit.com/articles/article.aspx?p=2414582) to simplify a method that only returns a value;
-        public Brush SelectedColor => IsSelected ? Brushes.Red : Brushes.Tomato;
+        public Brush SelectedColor => IsSelected ? Brushes.Red : Brushes.Yellow;
 
         // Constructor.
         // The constructor is in this case used to set the default values for the properties.

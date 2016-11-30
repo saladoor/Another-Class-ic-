@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApplication1.Model
+namespace _WpfApplication1.Model
 {
     // The Line class has a reference to 2 shapes, that it connects.
     public class Line : NotifyBase
@@ -49,4 +49,3 @@ namespace WpfApplication1.Model
         public Shape To { get { return to; } set { to = value; NotifyPropertyChanged(); } }
     }
 }
-
