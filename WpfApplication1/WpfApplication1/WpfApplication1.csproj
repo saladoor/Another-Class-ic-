@@ -88,7 +88,18 @@
     <Compile Include="ResizeThumb.cs" />
     <Compile Include="RotateThumb.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
-    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="View\Application.xaml.cs">
+      <DependentUpon>Application.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ArrowUserControl.xaml.cs">
+      <DependentUpon>ArrowUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LineUserControl.xaml.cs">
+      <DependentUpon>LineUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RectangleUserControl.xaml.cs">
+      <DependentUpon>RectangleUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ToolbarView.xaml.cs">
       <DependentUpon>ToolbarView.xaml</DependentUpon>
     </Compile>
@@ -119,6 +130,22 @@
     <Page Include="Resources\RotateDecorator.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Application.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ArrowUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LineUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RectangleUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ToolbarView.xaml">
       <SubType>Designer</SubType>
@@ -157,12 +184,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UserControls\" />
-    <Folder Include="View\Images\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="View\Arrow.png" />
-    <Resource Include="View\Line.png" />
-    <Resource Include="View\Rectangle.png" />
+    <Resource Include="View\Images\Arrow.png" />
+    <Resource Include="View\Images\Line.png" />
+    <Resource Include="View\Images\Rectangle.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
