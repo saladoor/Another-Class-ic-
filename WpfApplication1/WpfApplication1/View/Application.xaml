@@ -8,13 +8,13 @@
         
         <DataTemplate DataType="{x:Type model:Shape}">
             <Canvas>
-                <local:RectangleUserControl/>
+                <View:RectangleUserControl/>
             </Canvas>
         </DataTemplate>
 
         <DataTemplate DataType="{x:Type model:Line}">
             <Canvas>
-                <local:LineUserControl/>
+                <View:LineUserControl/>
             </Canvas>
         </DataTemplate>
 
