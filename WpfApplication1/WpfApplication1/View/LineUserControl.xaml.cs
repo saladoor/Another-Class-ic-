@@ -18,11 +18,7 @@ namespace WpfApplication1.View
     /// <summary>
     /// Interaction logic for LineUserControl.xaml
     /// </summary>
-    public partial class LineUserControl : Page
+    public partial class LineUserControl : UserControl
     {
-        public LineUserControl()
-        {
-            InitializeComponent();
-        }
     }
 }

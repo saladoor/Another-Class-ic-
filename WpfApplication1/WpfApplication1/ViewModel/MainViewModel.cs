@@ -45,11 +45,11 @@ namespace WpfApplication1.ViewModel
         // The "{ get; set; }" syntax describes that a private field 
         //  and default getter setter methods should be generated.
         // This is called Auto-Implemented Properties (http://msdn.microsoft.com/en-us/library/bb384054.aspx).
-        public ObservableCollection<Shape> Shapes { get; set; }
+        public ObservableCollection<Shape> Rectangle { get; set; }
         public ObservableCollection<Line> Lines { get; set; }
 
         // Commands that the UI can be bound to.
-        public ICommand AddShapeCommand { get; }
+        public ICommand AddShapeCommand { get;  }
         public ICommand RemoveShapeCommand { get; }
         public ICommand AddLineCommand { get; }
         public ICommand RemoveLinesCommand { get; }

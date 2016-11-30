@@ -74,10 +74,6 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
     <Compile Include="Command\AddLineCommand.cs" />
     <Compile Include="Command\AddShapeCommand.cs" />
     <Compile Include="Command\MoveShapeCommand.cs" />
@@ -97,8 +93,8 @@
     <Compile Include="View\LineUserControl.xaml.cs">
       <DependentUpon>LineUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\RectangleUserControl.xaml.cs">
-      <DependentUpon>RectangleUserControl.xaml</DependentUpon>
+    <Compile Include="View\ShapeUserControl.xaml.cs">
+      <DependentUpon>ShapeUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ToolbarView.xaml.cs">
       <DependentUpon>ToolbarView.xaml</DependentUpon>
@@ -107,15 +103,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -143,7 +135,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\RectangleUserControl.xaml">
+    <Page Include="View\ShapeUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -180,7 +172,7 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="ViewModel\App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UserControls\" />
