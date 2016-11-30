@@ -1,0 +1,22 @@
+﻿<Application x:Class="WpfApplication1.View.Application"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:WpfApplication1.View"
+      xmlns:model="clr-namespace:WpfApplication1.Model"
+      StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        
+        <DataTemplate DataType="{x:Type model:Shape}">
+            <Canvas>
+                <local:RectangleUserControl/>
+            </Canvas>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type model:Line}">
+            <Canvas>
+                <local:LineUserControl/>
+            </Canvas>
+        </DataTemplate>
+
+    </Application.Resources>
+</Application>
